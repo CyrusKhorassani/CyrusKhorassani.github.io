@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>اخبار اویسینا</title>
+    <meta charset="UTF-8">
+    <style>
+        /* General styling */
+        body {
+            font-family: "Times New Roman", serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f1f1f1;
+            color: black;
+        }
+        
+        /* Styling for the header */
+        .header {
+            background-color: #333;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        
+        /* Styling for the logo */
+        .logo img {
+            height: 50px;
+        }
+        
+        /* Styling for the subject tabs container */
+        .subject-tabs {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+        }
+        
+        /* Styling for each subject tab */
+        .subject-tab {
+            font-family: Georgia, serif;
+            font-size: 14px; /* Adjust the font size */
+            color: white;
+            padding: 5px 10px; /* Adjust the padding */
+            margin: 0 5px; /* Adjust the margin */
+            cursor: pointer;
+            border-bottom: 2px solid transparent;
+            transition: border-color 0.3s;
+        }
+        
+        /* Styling for the subject tab when active */
+        .subject-tab.active {
+            border-color: white;
+        }
+        
+        /* Styling for the articles container */
+        .articles {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 20px;
+        }
+        
+        /* Styling for each article */
+        .article {
+            width: 300px;
+            background-color: #fff;
+            border-radius: 10px;
+            margin: 20px;
+            padding: 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+            cursor: pointer;
+            overflow: hidden;
+        }
+        
+        /* Hover effect for articles */
+        .article:hover {
+            transform: scale(1.05);
+        }
+        
+        /* Styling for the article title */
+        .article h2 {
+            font-size: 24px;
+            margin-top: 0;
+            font-family: "Cheltenham", serif;
+        }
+        
+        /* Styling for the article description */
+        .article p {
+            font-size: 16px;
+            margin-top: 10px;
+            font-family: "Georgia", serif;
+            color: #777;
+        }
+        
+        /* Styling for the article image */
+        .article img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            <img src="logo.png" alt="لوگوی اخبار اویسینا" />
+        </div>
+        
+        <div class="subject-tabs">
+            <a href="covid.html" class="subject-tab">کووید-۱۹</a>
+            <a href="international.html" class="subject-tab">سلامت بین‌المللی</a>
+            <a href="iran.html" class="subject-tab">ایران</a>
+            <a href="usa.html" class="subject-tab">ایالات متحده</a>
+        </div>
+    </div>
+    
+    <div class="articles">
+        <a href="article1.html" class="article">
+            <h2>مقاله ۱</h2>
+            <p>این توضیحات مقاله ۱ است.</p>
+            <img src="article1.jpg" alt="مقاله ۱" />
+        </a>
+        <a href="article2.html" class="article">
+            <h2>مقاله ۲</h2>
+            <p>این توضیحات مقاله ۲ است.</p>
+            <img src="article2.jpg" alt="مقاله ۲" />
+        </a>
+        <a href="article3.html" class="article">
+            <h2>مقاله ۳</h2>
+            <p>این توضیحات مقاله ۳ است.</p>
+            <img src="article3.jpg" alt="مقاله ۳" />
+        </a>
+  <a href="article4.html" class="article">
+            <h2>مقاله ۳</h2>
+            <p>این توضیحات مقاله ۳ است.</p>
+            <img src="article4.jpg" alt="مقاله ۳" />
+        </a>
+
+        <!-- Add more article cards as needed -->
+    </div>
+</body>
+</html>
