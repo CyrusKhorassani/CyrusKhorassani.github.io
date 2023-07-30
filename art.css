@@ -102,7 +102,9 @@
 /* Styling for the article text */
 .article-text {
     font-size: 18px;
-    line-height: 1.6;
+    line-height: 2.0;
+    text-indent: 2em;
+    margin-bottom: 30px;
     font-family: "Georgia", serif;
     color: #333;
     text-align: justify;
