@@ -1,3 +1,10 @@
+  
+  .article-byline {
+    font-size: 16px;
+    color: #666;
+    text-align: center;
+}
+  
   /* General styling */
   body {
     font-family: "Times New Roman", serif;
@@ -122,9 +129,10 @@
     margin-bottom: 30px; /* Add spacing between paragraphs */
 }
 
-/* Styling for the article byline */
+/* Styling for the article byline 
 .article-byline {
     font-size: 16px;
     color: #666;
     text-align: center;
 }
+*/
