@@ -5,6 +5,7 @@
     padding: 0;
     background-color: #f1f1f1;
     color: black;
+    direction: rtl;
 }
 
 /* Styling for the header */
