@@ -120,3 +120,26 @@
     color: #666;
     text-align: center;
 }
+
+.subject-tabs {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+/* Styling for each subject tab */
+.subject-tab {
+    font-family: Georgia, serif;
+    font-size: 14px; /* Adjust the font size */
+    color: white;
+    padding: 5px 10px; /* Adjust the padding */
+    margin: 0 5px; /* Adjust the margin */
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+    transition: border-color 0.3s;
+}
+
+/* Styling for the subject tab when active */
+.subject-tab.active {
+    border-color: white;
+}
