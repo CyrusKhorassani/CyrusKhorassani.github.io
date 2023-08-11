@@ -131,6 +131,19 @@ COVID-19 دهه‌ها پیشرفت‌ها را از بین برد، چنگ گف
         <p class="article-byline">
             <a href="https://apnews.com/article/covid19-long-covid-heart-3dd8f26c663e96bffcc2980830626153">نوشته شده توسط AP News</p>
 
-    </div>
+                <button class="share-button" onclick="copyLink()">اشتراک‌گذاری صفحه</button>
+            </div>
+    <script>
+        function copyLink() {
+            var copyText = window.location.href;
+            var tempInput = document.createElement("input");
+            document.body.appendChild(tempInput);
+            tempInput.value = copyText;
+            tempInput.select();
+            document.execCommand("copy");
+            document.body.removeChild(tempInput);
+            alert("لینک کپی شد: " + copyText);
+        }
+    </script>
 </body>
 </html>
