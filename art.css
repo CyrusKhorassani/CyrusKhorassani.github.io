@@ -143,3 +143,8 @@
 .subject-tab.active {
     border-color: white;
 }
+.article-date {
+    font-size: 14px;
+    color: #888;
+    margin-top: 5px;
+}
