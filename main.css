@@ -50,8 +50,8 @@ body {
     display: inline-block;
     vertical-align: middle;
     width: auto;
-    max-width: 40%;
-    height: 40px; /* You can adjust the height to your preference */
+    max-width: 100%;
+    height: 100px; /* You can adjust the height to your preference */
 }
 
 
