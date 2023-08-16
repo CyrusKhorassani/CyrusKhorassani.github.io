@@ -1,140 +1,107 @@
- /* General styling */
- body {
-    font-family: "Times New Roman", serif;
+/* Reset some default styles */
+body, h1, h2, h3, p, img {
     margin: 0;
     padding: 0;
-    background-color: #f1f1f1;
-    color: cyan;
-    direction:rtl;
+    border: 0;
 }
 
-/* Styling for the header */
+/* Style for the whole page */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+/* Header styles */
 .header {
     background-color: #333;
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-/* Styling for the logo */
-.logo img {
-    height: 50px;
-}
-
-/* Styling for the subject tabs container */
-.subject-tabs {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-}
-
-/* Styling for each subject tab */
-.subject-tab {
-    font-family: Georgia, serif;
-    font-size: 14px; /* Adjust the font size */
     color: white;
-    padding: 5px 10px; /* Adjust the padding */
-    margin: 0 5px; /* Adjust the margin */
-    cursor: pointer;
-    border-bottom: 2px solid transparent;
-    transition: border-color 0.3s;
-}
-
-/* Styling for the subject tab when active */
-.subject-tab.active {
-    border-color: white;
-}
-
-/* Styling for the articles container */
-.articles {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: 20px;
-}
-
-/* Styling for each article */
-.article {
-    width: 300px;
-    background-color: #fff;
-    border-radius: 10px;
-    margin: 20px;
-    padding: 20px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
-    cursor: pointer;
-    overflow: hidden;
-}
-
-/* Hover effect for articles */
-.article:hover {
-    transform: scale(1.05);
-}
-
-/* Styling for the article title */
-.article h2 {
-    font-size: 24px;
-    margin-top: 0;
-    font-family: "Cheltenham", serif;
-}
-
-/* Styling for the article description */
-.article p {
-    font-size: 16px;
-    margin-top: 10px;
-    font-family: "Georgia", serif;
-    color: #777;
-}
-
-/* Styling for the article image */
-.article img {
-    width: 100%;
-    height: auto;
-    border-radius: 5px;
-    margin-top: 10px;
-}
-
-.article-container {
-    max-width: 800px;
-    margin: 50px auto;
-    background-color: white;
-    border-radius: 10px;
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-/* Styling for the article image */
-.article-image {
-    width: 100%;
-    border-radius: 5px;
-    overflow: hidden; /* Hide any overflowing content, like large images */
-}
-
-.article-image img {
-    width: 100%;
-    height: auto;
-}
-
-/* Styling for the article title */
-.article-title {
-    font-size: 24px;
-    margin-top: 20px;
-    font-family: "Cheltenham", serif;
+    padding: 20px 0;
     text-align: center;
 }
 
-/* Styling for the article text container */
-.article-text-container {
-    margin-top: 20px;
+.header h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
 }
 
-/* Styling for the article text */
-.article-text {
-    font-size: 18px;
-    line-height: 1.6;
-    font-family: "Georgia", serif;
+/* Subject tabs */
+.subject-tabs {
+    background-color: #444;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+}
+
+.subject-tab {
+    color: white;
+    text-decoration: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.subject-tab:hover {
+    background-color: #555;
+}
+
+/* Logo styles */
+.logo {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/* Article styles */
+.articles {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.article {
+    display: block;
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
     color: #333;
-    text-align: justify;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.article:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.article h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.article p {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.article img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+/* Share button styles */
+.share-button {
+    display: block;
+    margin: 20px auto;
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.share-button:hover {
+    background-color: #0056b3;
 }
