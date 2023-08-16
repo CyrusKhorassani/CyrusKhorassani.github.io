@@ -45,10 +45,13 @@ body {
 }
 
 /* Logo styles */
+/* Logo styles */
 .logo {
     display: inline-block;
     vertical-align: middle;
+    max-width: 100px; /* Adjust the width as needed */
 }
+
 
 /* Article styles */
 .articles {
