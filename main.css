@@ -51,7 +51,6 @@ body {
     vertical-align: middle;
     width: auto;
     max-width: 100%;
-    height: 100px; /* You can adjust the height to your preference */
 }
 
 
@@ -110,3 +109,5 @@ body {
 .share-button:hover {
     background-color: #0056b3;
 }
+
+
