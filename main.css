@@ -45,10 +45,15 @@ body {
 }
 
 /* Logo styles */
+/* Logo styles */
 .logo {
     display: inline-block;
     vertical-align: middle;
+    width: auto;
+    max-width: 100%;
+    height: 40px; /* You can adjust the height to your preference */
 }
+
 
 /* Article styles */
 .articles {
