@@ -5,11 +5,13 @@ body, h1, h2, h3, p, img {
     border: 0;
 }
 
+
 /* Style for the whole page */
 body {
     font-family: Arial, sans-serif;
     background-color: #f0f0f0;
 }
+
 
 /* Header styles */
 .header {
@@ -17,10 +19,11 @@ body {
     color: rgb(0, 0, 0);
     padding: 5px 0;
     text-align: center;
-    border-bottom: 1px solid #000000;
+    border-bottom: 1px solid #d4d4d4;
     margin-bottom: 0px; /* Adjust as needed */
     padding-bottom: 0px; /* Adjust as needed */
 }
+
 
 .header h1 {
     font-size: 36px;
@@ -30,14 +33,16 @@ body {
     padding-bottom: 0px; /* Adjust as needed */
 }
 
+
 /* Subject tabs */
 .subject-tabs {
     background-color: #ffffff;
     display: flex;
     justify-content: space-around;
     padding: 20px 0;
-  
+ 
 }
+
 
 .subject-tab {
     color: rgb(0, 0, 0);
@@ -47,9 +52,11 @@ body {
     transition: background-color 0.3s;
 }
 
+
 .subject-tab:hover {
     background-color: #e4e4e4;
 }
+
 
 /* Logo styles */
 /* Logo styles */
@@ -64,12 +71,51 @@ body {
 }
 
 
+
+
 /* Article styles */
 .articles {
-    display: grid;
+    
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
     padding: 20px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.wide-aisle, .narrow-aisle {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex: 0.8;
+}
+
+.narrow-aisle {
+    flex: 0.7; /* Adjust the width of the narrow aisle */
+}
+
+.aisle-separator {
+    border-right: 1px solid #ccc; /* Add a thin line as separator */
+    height: 100%; /* Make the separator height match the height of the articles */
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: calc(50% + 10px); /* Adjust the position to align with the center of the gap */
+    z-index: -1; /* Place the separator behind the articles */
+}
+
+.wide-aisle {
+    flex: 2; /* More space for this aisle */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.narrow-aisle {
+    flex: 1; /* Less space for this aisle */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 .article {
@@ -83,20 +129,46 @@ body {
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
-@media (max-width: 768px) {
-      .articles {
-        display: block; /* Display articles vertically on mobile */
+
+
+.article h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.article p {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.article img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+
+
+@media (max-width: 400px) {
+    .articles {
+        flex-direction: column;
+        align-items: center; /* Center aisles on smaller screens */
     }
 
-    .article-container {
-        display: none; /* Hide all articles by default */
-        margin-bottom: 20px; /* Add spacing between articles */
-    }
-
-    .article-container:first-child {
-        display: block; /* Display the first article */
+    .wide-aisle, .narrow-aisle, .aisle-separator {
+        flex: auto;
+        width: 100%; /* Reset widths for smaller screens */
+        margin: 0; /* Reset margins for smaller screens */
     }
 }
+
+
+
+
+
+
+
+
 
 
 
@@ -110,20 +182,24 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
+
 .article h2 {
     font-size: 20px;
     margin-bottom: 10px;
 }
+
 
 .article p {
     font-size: 16px;
     margin-bottom: 15px;
 }
 
+
 .article img {
     width: 100%;
     border-radius: 5px;
 }
+
 
 /* Share button styles */
 .share-button {
@@ -138,15 +214,18 @@ body {
     transition: background-color 0.3s;
 }
 
+
 .share-button:hover {
     background-color: #0056b3;
 }
+
 
 /* Header Content Styles */
 .header-content {
     text-align: center;
     padding: 0px 0;
 }
+
 
 .header-content h1 {
     font-size: 25px;
@@ -155,6 +234,15 @@ body {
     display: flex;
     justify-content: space-around;
     padding: 20px 0;
+}
+
+.article-container {
+    display: block;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
 
@@ -166,4 +254,8 @@ body {
     border-radius: 5px;
     transition: background-color 0.3s;
 }
+
+
+
+
 
