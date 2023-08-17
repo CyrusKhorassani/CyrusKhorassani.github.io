@@ -28,6 +28,13 @@
             <img src="images/logo.png" alt="لوگوی اخبار اویسینا" />
 
         </div></a>
+        <div class="header-content">
+            <h1>
+              <span class="date">اخبار پزشکی امروز</span>
+              <span class="date">ساخته کوروش خراسانی</span>
+            <span class="date">تاریخ: <span id="current-date"></span></span>
+            </h1>
+        </div>
 
         
         <div class="subject-tabs">
@@ -83,6 +90,17 @@
 
         <!-- Add more article cards as needed -->
     </div>
-   
+    <script>
+        // Get the current date
+        const currentDate = new Date();
+    
+        // Format the date as desired
+        const options = { year: 'numeric', month: 'long', day: 'numeric' };
+        const formattedDate = currentDate.toLocaleDateString('fa-IR', options);
+    
+        // Update the content of the current-date span
+        document.getElementById('current-date').textContent = formattedDate;
+    </script>
+    
 </body>
 </html>
