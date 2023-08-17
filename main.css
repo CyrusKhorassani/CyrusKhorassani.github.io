@@ -84,14 +84,26 @@ body {
 }
 
 @media (max-width: 768px) {
-    .articles {
+      .articles {
         display: block; /* Display articles vertically on mobile */
     }
 
     .article-container {
+        display: none; /* Hide all articles by default */
         margin-bottom: 20px; /* Add spacing between articles */
     }
+
+    .article-container:first-child {
+        display: block; /* Display the first article */
+    }
 }
+
+
+
+
+
+
+
 
 .article:hover {
     transform: translateY(-5px);
