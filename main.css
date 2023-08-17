@@ -13,7 +13,7 @@ body {
 
 /* Header styles */
 .header {
-    background-color: #333;
+    background-color: #ffffff;
     color: white;
     padding: 20px 0;
     text-align: center;
@@ -26,14 +26,14 @@ body {
 
 /* Subject tabs */
 .subject-tabs {
-    background-color: #444;
+    background-color: #ffffff;
     display: flex;
     justify-content: space-around;
     padding: 10px 0;
 }
 
 .subject-tab {
-    color: white;
+    color: rgb(0, 0, 0);
     text-decoration: none;
     padding: 8px 15px;
     border-radius: 5px;
@@ -41,7 +41,7 @@ body {
 }
 
 .subject-tab:hover {
-    background-color: #555;
+    background-color: #000000;
 }
 
 /* Logo styles */
