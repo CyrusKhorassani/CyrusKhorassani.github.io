@@ -19,6 +19,14 @@
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TC8VT62L"
         height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <!-- End Google Tag Manager (noscript) -->
+
+        <div class="small-header">
+            <button id="small-about-button" class="small-button">درباره ما</button>
+            <button id="small-email-button" class="small-button">به ما ایمیل بزنید</button>
+        </div>
+
+
+
     <div class="header">
         <a href="../index.html">
         <div class="logo">
@@ -26,6 +34,16 @@
             <img src="../images/articlelogo.jpeg" alt="لوگوی اخبار اویسینا" />
             
         </div></a>
+
+
+        <div class="header-content">
+            <h1>
+              <span class="date">اخبار پزشکی امروز</span>
+              <span class="date">ساخته : سیروس خ.</span>
+            <span class="date">تاریخ: <span id="current-date"></span></span>
+            </h1>
+        </div>
+
         
         <div class="subject-tabs">
             <a href="covid.html" class="subject-tab">کووید-۱۹</a>
@@ -36,26 +54,125 @@
     </div>
     
     <div class="articles">
+
+        <div class="wide-aisle">
+
+        <div class="article-container">
+
         <a href="COVIDarticles/CA1.html" class="article">
             <h2>سازمان بهداشت جهانی (WHO) پایان اورژانس عمومی جهانی بهداشت عمومی کووید-۱۹ را اعلام می‌کند.</h2>
             <p>این نشان دهنده تغییر به اقدامات بلند مدت برای رسیدگی به ویروس کرونا است.</p>
             <img src="COVIDimages/COVID1.png" alt="مقاله ۱" />
         </a>
+        </div>
+        </div>
+
+        <div class="narrow-aisle">
+
+        <div class="article-container">
+
         <a href="COVIDarticles/CA2.html" class="article">
             <h2>COVID-19  بر سلامت قلب تأثیر گذاشت و پزشکان هنوز در تلاشند که چگونه به کمک کنند.</h2>
             <p></p>
             <img src="COVIDimages/covidimage2.jpg" alt="مقاله ۱" />
             <span class="article-date">تاریخ: ۱۰ مرداد ۱۴۰۲</span>
         </a>
+        </div>
+        <div class="article-container">
+
         <a href="COVIDarticles/CA3.html" class="article">
             <h2>واکسن‌های جدید کووید با افزایش نوع «اریس» در راه هستند</h2>
             <p></p>
             <img src="COVIDimages/CA3image.jpeg" alt="مقاله ۱" />
             <span class="article-date">تاریخ:۱۴ اوت ۲۰۲۳</span>
         </a>
-        
-
+        </div>
+</div>
         <!-- Add more article cards as needed -->
     </div>
+    <script>
+        // Get the current date
+        const currentDate = new Date();
+    
+        // Format the date as desired
+        const options = { year: 'numeric', month: 'long', day: 'numeric' };
+        const formattedDate = currentDate.toLocaleDateString('fa-IR', options);
+    
+        // Update the content of the current-date span
+        document.getElementById('current-date').textContent = formattedDate;
+    </script>
 </body>
+
+
+
+<footer class="footer">
+    <div class="footer-left">
+        <img src="../images/logo.png" alt="Footer Logo" class="footer-logo">
+    </div>
+    <div class="footer-right">
+        <ul class="footer-categories">
+            <li><a href="../covid/covid.html">کووید-۱۹</a></li>
+            <li><a href="../intl/international.html">سلامت بین‌المللی</a></li>
+            <li><a href="../iran/iran.html">ایران</a></li>
+            <li><a href="../usa/usa.html">ایالات متحده</a></li>
+            <!-- Add more categories as needed -->
+        </ul>
+        <a href="about.html" class="about-button">درباره ما</a>
+
+        <button id="email-button" class="email-button">به ما ایمیل بزنید</button>
+    </div>
+</footer>
+<script>
+    document.getElementById("email-button").addEventListener("click", function () {
+        // Create a temporary input element to copy the email to the clipboard
+        var tempInput = document.createElement("input");
+        tempInput.value = "ibnsinanews@gmail.com"; // Set the email address
+
+        // Append the input element to the document
+        document.body.appendChild(tempInput);
+
+        // Select the input element's content
+        tempInput.select();
+
+        // Copy the selected content to the clipboard
+        document.execCommand("copy");
+
+        // Remove the temporary input element
+        document.body.removeChild(tempInput);
+
+        // Provide user feedback (optional)
+        alert("آدرس ایمیل در کلیپ بورد کپی شد");
+    });
+</script>
+<script>
+    document.getElementById("small-email-button").addEventListener("click", function () {
+        var tempInput = document.createElement("input");
+        tempInput.value = "ibnsinanews@gmail.com"; // Set the email address
+        document.body.appendChild(tempInput);
+        tempInput.select();
+        document.execCommand("copy");
+        document.body.removeChild(tempInput);
+        alert("آدرس ایمیل در کلیپ بورد کپی شد");
+    });
+</script>
+<script>
+    document.getElementById("small-about-button").addEventListener("click", function () {
+        // Redirect the user to the "about.html" page
+        window.location.href = "about.html";
+    });
+
+    document.getElementById("small-email-button").addEventListener("click", function () {
+        // Your existing code for the "Email Us" button
+        var tempInput = document.createElement("input");
+        tempInput.value = "ibnsinanews@gmail.com"; // Set the email address
+        document.body.appendChild(tempInput);
+        tempInput.select();
+        document.execCommand("copy");
+        document.body.removeChild(tempInput);
+        alert("Email address copied to clipboard!");
+    });
+</script>
+
+
+
 </html>
