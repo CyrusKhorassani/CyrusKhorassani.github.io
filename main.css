@@ -9,17 +9,17 @@ body, h1, h2, h3, p, img {
 /* Style for the whole page */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+    background-color: #ffffff;
 }
 
 
 /* Header styles */
 .header {
-    background-color: #ffffff;
+    background-color: #003A89;
     color: rgb(0, 0, 0);
     padding: 5px 0;
     text-align: center;
-    border-bottom: 1px solid #d4d4d4;
+    border-bottom: 0px solid #d4d4d4;
     margin-bottom: 0px; /* Adjust as needed */
     padding-bottom: 0px; /* Adjust as needed */
 }
@@ -28,7 +28,7 @@ body {
 .header h1 {
     font-size: 36px;
     margin-bottom: 5px;
-    border-bottom: 1px solid #dadada;
+    border-bottom: 0px solid #dadada;
     margin-bottom: 0px; /* Adjust as needed */
     padding-bottom: 0px; /* Adjust as needed */
 }
@@ -40,6 +40,8 @@ body {
     display: flex;
     justify-content: space-around;
     padding: 20px 0;
+    border-bottom: 3px solid #003A89;
+
  
 }
 
@@ -65,7 +67,7 @@ body {
     vertical-align: middle;
     width: auto;
     max-width: 100%;
-    border-bottom: 1px solid #ebebeb;
+    border-bottom: 1px solid #ffffff;
     margin-bottom: 0px; /* Adjust as needed */
     padding-bottom: 0px; /* Adjust as needed */
 }
@@ -120,12 +122,13 @@ body {
 
 .article {
     display: block;
-    background-color: white;
+    background-color: rgb(230, 230, 230);
     border-radius: 5px;
+    border-color: #003A89;
     padding: 10px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
     text-decoration: none;
-    color: #333;
+    color: #252525;
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
@@ -230,15 +233,17 @@ body {
 .header-content h1 {
     font-size: 25px;
     margin-bottom: 10px;
-    background-color: #ffffff;
+    background-color: #003A89;
     display: flex;
     justify-content: space-around;
     padding: 20px 0;
+    border-bottom: 0px solid #ffffff;
+
 }
 
 .article-container {
     display: block;
-    background-color: #fff;
+    background-color: #ffffff;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     overflow: hidden;
@@ -248,7 +253,7 @@ body {
 
 .date {
     font-size: 16px;
-    color: rgb(58, 58, 58);
+    color: rgb(255, 255, 255);
     text-decoration: none;
     padding: 4px 15px;
     border-radius: 5px;
@@ -273,8 +278,8 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background-color: #ffffff; /* Match your website's color scheme */
-    color: #000000; /* Text color */
+    background-color: #003A89; /* Match your website's color scheme */
+    color: #ffffff; /* Text color */
 }
 
 .footer-left {
@@ -318,7 +323,7 @@ body {
     font-family: Arial, sans-serif;
 
     text-decoration: none;
-    color: #000000; /* Text color */
+    color: #ffffff; /* Text color */
     font-weight: bold;
 }
 
@@ -328,8 +333,8 @@ body {
 
     padding: 10px 20px;
     border: none;
-    background-color: #f7f7f7; /* Button color */
-    color: #000000;
+    background-color: #0148ac; /* Button color */
+    color: #ffffff;
     border-radius: 5px;
     margin-left: 20px;
     cursor: pointer;
@@ -340,7 +345,7 @@ body {
 .email-button:hover {
     font-family: Arial, sans-serif;
 
-    background-color: #ffffff; /* Button color on hover */
+    background-color: #0052c5; /* Button color on hover */
 }
 
 
@@ -354,16 +359,16 @@ body {
     justify-content: center; /* Center the buttons horizontally */
     align-items: center;
     padding: 10px 0; /* Adjust padding for vertical alignment */
-    background-color: #ffffff; /* Match your website's color scheme */
-    border-bottom: 1px solid #f0f0f0; /* Add a thin border at the bottom */
-    color: #000000; /* Text color */
+    background-color: #003A89; /* Match your website's color scheme */
+    border-bottom: 0px solid #f0f0f0; /* Add a thin border at the bottom */
+    color: #ffffff; /* Text color */
 }
 
 .small-button {
     padding: 10px 20px;
     border: none;
-    background-color: #ffffff; /* Button color */
-    color: #000000;
+    background-color: #003A89; /* Button color */
+    color: #ffffff;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s;
@@ -371,5 +376,5 @@ body {
 }
 
 .small-button:hover {
-    background-color: #e7e7e7; /* Button color on hover */
+    background-color: #004db9; /* Button color on hover */
 }
