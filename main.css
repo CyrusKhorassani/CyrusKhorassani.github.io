@@ -97,7 +97,7 @@ body {
 }
 
 .aisle-separator {
-    border-right: 1px solid #ccc; /* Add a thin line as separator */
+    border-right: 1px solid #000000; /* Add a thin line as separator */
     height: 100%; /* Make the separator height match the height of the articles */
     position: absolute;
     top: 0;
@@ -160,7 +160,7 @@ body {
 
     .wide-aisle, .narrow-aisle, .aisle-separator {
         flex: auto;
-        width: 100%; /* Reset widths for smaller screens */
+        width: 90%; /* Reset widths for smaller screens */
         margin: 0; /* Reset margins for smaller screens */
     }
 }
