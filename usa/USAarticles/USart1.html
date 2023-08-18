@@ -62,4 +62,73 @@
 
     </div>
 </body>
+<footer class="footer">
+    <div class="footer-left">
+        <a href="../../index.html" class="logo-link">
+
+        <img src="../../images/logo.png" alt="Footer Logo" class="footer-logo">
+    </div>
+    <div class="footer-right">
+        <ul class="footer-categories">
+            <li><a href="../../covid/covid.html">کووید-۱۹</a></li>
+            <li><a href="../../intl/international.html">سلامت بین‌المللی</a></li>
+            <li><a href="../../iran/iran.html">ایران</a></li>
+            <li><a href="../../usa/usa.html">ایالات متحده</a></li>
+            <!-- Add more categories as needed -->
+        </ul>
+        <a href="about.html" class="about-button">درباره ما</a>
+
+        <button id="email-button" class="email-button">به ما ایمیل بزنید</button>
+    </div>
+</footer>
+<script>
+    document.getElementById("email-button").addEventListener("click", function () {
+        // Create a temporary input element to copy the email to the clipboard
+        var tempInput = document.createElement("input");
+        tempInput.value = "ibnsinanews@gmail.com"; // Set the email address
+
+        // Append the input element to the document
+        document.body.appendChild(tempInput);
+
+        // Select the input element's content
+        tempInput.select();
+
+        // Copy the selected content to the clipboard
+        document.execCommand("copy");
+
+        // Remove the temporary input element
+        document.body.removeChild(tempInput);
+
+        // Provide user feedback (optional)
+        alert("آدرس ایمیل در کلیپ بورد کپی شد");
+    });
+</script>
+<script>
+    document.getElementById("small-email-button").addEventListener("click", function () {
+        var tempInput = document.createElement("input");
+        tempInput.value = "ibnsinanews@gmail.com"; // Set the email address
+        document.body.appendChild(tempInput);
+        tempInput.select();
+        document.execCommand("copy");
+        document.body.removeChild(tempInput);
+        alert("آدرس ایمیل در کلیپ بورد کپی شد");
+    });
+</script>
+<script>
+    document.getElementById("small-about-button").addEventListener("click", function () {
+        // Redirect the user to the "about.html" page
+        window.location.href = "about.html";
+    });
+
+    document.getElementById("small-email-button").addEventListener("click", function () {
+        // Your existing code for the "Email Us" button
+        var tempInput = document.createElement("input");
+        tempInput.value = "ibnsinanews@gmail.com"; // Set the email address
+        document.body.appendChild(tempInput);
+        tempInput.select();
+        document.execCommand("copy");
+        document.body.removeChild(tempInput);
+        alert("Email address copied to clipboard!");
+    });
+</script>
 </html>

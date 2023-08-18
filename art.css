@@ -10,7 +10,7 @@
 
 /* Styling for the header */
 .header {
-    background-color: #ffffff;
+    background-color: #003A89;
     padding: 20px;
     display: flex;
     justify-content: space-between;
@@ -131,7 +131,7 @@
 .subject-tab {
     font-family: Georgia, serif;
     font-size: 14px; /* Adjust the font size */
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     padding: 5px 10px; /* Adjust the padding */
     margin: 0 5px; /* Adjust the margin */
     cursor: pointer;
@@ -158,4 +158,82 @@
     cursor: pointer;
     text-decoration: none;
     margin-top: 20px;
+}
+
+.footer {
+    font-family: Arial, sans-serif;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #003A89; /* Match your website's color scheme */
+    color: #ffffff; /* Text color */
+}
+
+.footer-left {
+    font-family: Arial, sans-serif;
+
+    flex: 1;
+}
+
+.footer-logo {
+    font-family: Arial, sans-serif;
+
+    max-width: 100px;
+    height: auto;
+}
+
+.footer-right {
+    font-family: Arial, sans-serif;
+
+    flex: 2;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.footer-categories {
+    font-family: Arial, sans-serif;
+
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-categories li {
+    font-family: Arial, sans-serif;
+
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.footer-categories a {
+    font-family: Arial, sans-serif;
+
+    text-decoration: none;
+    color: #ffffff; /* Text color */
+    font-weight: bold;
+}
+
+.about-button,
+.email-button {
+    font-family: Arial, sans-serif;
+
+    padding: 10px 20px;
+    border: none;
+    background-color: #0148ac; /* Button color */
+    color: #ffffff;
+    border-radius: 5px;
+    margin-left: 20px;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.about-button:hover,
+.email-button:hover {
+    font-family: Arial, sans-serif;
+
+    background-color: #0052c5; /* Button color on hover */
 }
