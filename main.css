@@ -152,7 +152,7 @@ body {
 
 
 
-@media (max-width: 400px) {
+@media (max-width: 800px) {
     .articles {
         flex-direction: column;
         align-items: center; /* Center aisles on smaller screens */
@@ -160,7 +160,7 @@ body {
 
     .wide-aisle, .narrow-aisle, .aisle-separator {
         flex: auto;
-        width: 90%; /* Reset widths for smaller screens */
+        width: 100%; /* Reset widths for smaller screens */
         margin: 0; /* Reset margins for smaller screens */
     }
 }
@@ -271,32 +271,47 @@ body {
 
 
 /* Footer styles */
+/* Footer styles */
+
+
+
+
+
+
+/* Footer styles */
 .footer {
     font-family: Arial, sans-serif;
 
-    display: flex;
     justify-content: space-between;
+
+    display: flex;
     align-items: center;
     padding: 20px;
     background-color: #003A89; /* Match your website's color scheme */
     color: #ffffff; /* Text color */
 }
 
+
 .footer-left {
     font-family: Arial, sans-serif;
+
 
     flex: 1;
 }
 
+
 .footer-logo {
     font-family: Arial, sans-serif;
+margin-right: 20px;
 
     max-width: 100px;
     height: auto;
 }
 
+
 .footer-right {
     font-family: Arial, sans-serif;
+
 
     flex: 2;
     display: flex;
@@ -304,32 +319,40 @@ body {
     align-items: center;
 }
 
+
 .footer-categories {
     font-family: Arial, sans-serif;
+
 
     list-style: none;
     margin: 0;
     padding: 0;
 }
 
+
 .footer-categories li {
     font-family: Arial, sans-serif;
+
 
     display: inline-block;
     margin-right: 20px;
 }
 
+
 .footer-categories a {
     font-family: Arial, sans-serif;
+
 
     text-decoration: none;
     color: #ffffff; /* Text color */
     font-weight: bold;
 }
 
+
 .about-button,
 .email-button {
     font-family: Arial, sans-serif;
+
 
     padding: 10px 20px;
     border: none;
@@ -341,12 +364,20 @@ body {
     transition: background-color 0.3s;
 }
 
+
 .about-button:hover,
 .email-button:hover {
     font-family: Arial, sans-serif;
 
+
     background-color: #0052c5; /* Button color on hover */
 }
+
+.email-button {
+    margin: 10px 20px; /* Adjust the margin as needed */
+    /* ... other styles ... */
+}
+
 
 
 
@@ -377,4 +408,17 @@ body {
 
 .small-button:hover {
     background-color: #004db9; /* Button color on hover */
+}
+
+
+
+@media (max-width: 1000px) {
+    .footer {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 3px; /* Adjust the height as needed */
+
+    }
 }
