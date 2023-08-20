@@ -359,7 +359,8 @@ margin-right: 20px;
     background-color: #0148ac; /* Button color */
     color: #ffffff;
     border-radius: 5px;
-    margin-left: 20px;
+    margin-left: 10px;
+    margin-right: 20px;
     cursor: pointer;
     transition: background-color 0.3s;
 }
