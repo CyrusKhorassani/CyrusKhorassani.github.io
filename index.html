@@ -69,7 +69,14 @@
             </a>
             </div>
 
-            
+            <div class="article-container">
+
+                <a href="https://avicennanews.me/intl/intlarticles/nobel-prize-in-chemistry-awarded-to-MIT-scientists" class="article">
+                    <h2>جایزه نوبل شیمی به سه دانشمند برای نقاط کوانتومی ریز و رنگارنگ تعلق گرفت</h2>
+                    <p></p>
+                    <img src="intl/intlimages/nobelprize.jpg" alt="مقاله ۱" />
+                </a>
+                </div>
 
 
         </div>
@@ -123,6 +130,43 @@
         document.getElementById('current-date').textContent = formattedDate;
     </script>
     
+
+   
+        <script>
+            // Array to store article elements
+            const articleElements = [];
+    
+            // Function to extract the publication date from an article element
+            function getPublicationDate(articleElement) {
+                const dateText = articleElement.querySelector('.article-date').textContent;
+                return new Date(dateText);
+            }
+    
+            // Collect article elements
+            const articleContainers = document.querySelectorAll('.article-container');
+            articleContainers.forEach(container => articleElements.push(container));
+    
+            // Sort article elements based on publication date (newest first)
+            articleElements.sort((a, b) => {
+                const dateA = getPublicationDate(a);
+                const dateB = getPublicationDate(b);
+                return dateB - dateA; // Sort in descending order (newest first)
+            });
+    
+            // Add sorted article elements back to the DOM
+            const wideAisle = document.querySelector('.wide-aisle');
+            articleElements.forEach(articleElement => {
+                wideAisle.appendChild(articleElement);
+            });
+        </script>
+    
+
+
+
+
+
+
+
 </body>
 <footer class="footer">
     <div class="footer-left">
