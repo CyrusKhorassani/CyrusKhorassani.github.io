@@ -1,0 +1,282 @@
+  /* General styling */
+  body {
+    font-family: "Times New Roman", serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f1f1f1;
+    color: black;
+    direction: rtl;
+}
+
+/* Styling for the header */
+.header {
+    background-color: #003A89;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1);
+}
+
+/* Styling for the logo link */
+.logo-link {
+    text-decoration: none; /* Remove default underline on links */
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+/* Styling for the logo */
+.logo img {
+    height: 50px;
+    margin-right: 10px; /* Add some spacing between the logo and text */
+}
+
+/* Styling for the article container */
+.article-container {
+    max-width: 800px;
+    margin: 50px auto;
+    background-color: white; /* Set the article background color to white */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adjust the box shadow for a softer effect */
+}
+
+/* Styling for the article image */
+.article-image {
+    width: 100%;
+    height: 300px; /* Set the height for the image placeholder */
+    background-color: #f1f1f1; /* Placeholder background color */
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+/* Styling for the article title */
+.article-title {
+    font-size: 24px;
+    margin-top: 0;
+    font-family: "Cheltenham", serif;
+}
+
+/* Styling for the article text */
+.article-text {
+    font-size: 18px;
+    line-height: 3.0;
+    text-indent: em;
+    margin-bottom: 30px;
+    font-family: "Georgia", serif;
+    color: #333;
+    text-align: justify;
+}
+
+.article-container {
+    max-width: 800px;
+    margin: 50px auto;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-family: "Georgia", serif;
+}
+/* Styling for the article image */
+.article-image {
+    width: 100%;
+    border-radius: 5px;
+    overflow: hidden; /* Hide any overflowing content, like large images */
+}
+
+.article-image img {
+    width: 100%;
+    height: auto;
+}
+
+/* Styling for the article title */
+.article-title {
+    font-size: 32px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-family: "Cheltenham", serif;
+    text-align: center;
+}
+
+
+/* Styling for the article text container */
+.article-text-container {
+    margin-top: 20px;
+}
+
+/* Styling for the article text */
+.article-text {
+    font-size: 18px;
+    line-height: 3.0;
+    color: #333;
+    text-align: justify;
+    text-indent: 2em; /* Add indentation to the paragraphs */
+    margin-bottom: 25px; /* Add spacing between paragraphs */
+}
+
+.article-byline {
+    font-size: 16px;
+    color: #666;
+    text-align: center;
+}
+
+.subject-tabs {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+/* Styling for each subject tab */
+.subject-tab {
+    font-family: Georgia, serif;
+    font-size: 14px; /* Adjust the font size */
+    color: rgb(255, 255, 255);
+    padding: 5px 10px; /* Adjust the padding */
+    margin: 0 5px; /* Adjust the margin */
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+    transition: border-color 0.3s;
+}
+
+/* Styling for the subject tab when active */
+.subject-tab.active {
+    border-color: white;
+}
+.article-date {
+    font-size: 14px;
+    color: #888;
+    margin-top: 5px;
+}
+
+.share-button {
+    display: inline-block;
+    background-color: #007bff;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+.footer {
+    font-family: Arial, sans-serif;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #003A89; /* Match your website's color scheme */
+    color: #ffffff; /* Text color */
+}
+
+.footer-left {
+    font-family: Arial, sans-serif;
+
+    flex: 1;
+}
+
+.footer-logo {
+    font-family: Arial, sans-serif;
+
+    max-width: 100px;
+    height: auto;
+}
+
+.footer-right {
+    font-family: Arial, sans-serif;
+
+    flex: 2;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.footer-categories {
+    font-family: Arial, sans-serif;
+
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-categories li {
+    font-family: Arial, sans-serif;
+
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.footer-categories a {
+    font-family: Arial, sans-serif;
+
+    text-decoration: none;
+    color: #ffffff; /* Text color */
+    font-weight: bold;
+}
+
+.about-button,
+.email-button {
+    font-family: Arial, sans-serif;
+
+    padding: 10px 20px;
+    border: none;
+    background-color: #0148ac; /* Button color */
+    color: #ffffff;
+    border-radius: 5px;
+    margin-left: 20px;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.about-button:hover,
+.email-button:hover {
+    font-family: Arial, sans-serif;
+
+    background-color: #0052c5; /* Button color on hover */
+}
+
+
+@media (max-width: 400px) {
+    .articles {
+        flex-direction: column;
+        align-items: center; /* Center aisles on smaller screens */
+    }
+
+    .wide-aisle, .narrow-aisle, .aisle-separator {
+        flex: auto;
+        width: 100%; /* Reset widths for smaller screens */
+        margin: 0; /* Reset margins for smaller screens */
+    }
+}
+
+/* Your existing CSS styles here */
+
+.content-wrapper {
+    min-height: calc(100vh - 200px); /* Adjust the height based on your header and footer height */
+    position: relative;
+}
+
+.footer {
+    font-family: Arial, sans-serif;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #003A89;
+    color: #ffffff; /* Text color */
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.3s;
+}
+
+/* Your other footer styles here */
+
+.show-footer .footer {
+    opacity: 1;
+}
