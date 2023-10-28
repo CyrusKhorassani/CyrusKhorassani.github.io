@@ -280,3 +280,30 @@
 .show-footer .footer {
     opacity: 1;
 }
+
+/* Your existing CSS styles here */
+
+.footer {
+    font-family: Arial, sans-serif;
+    display: none; /* Initially hidden */
+    background-color: #003A89;
+    color: #ffffff; /* Text color */
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 999; /* Ensures the footer is above other content */
+}
+
+.footer-content {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 800px; /* Centered within the viewport */
+    margin: 0 auto;
+}
+
+/* Your other footer styles here */
+
