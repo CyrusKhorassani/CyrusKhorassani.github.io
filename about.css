@@ -311,6 +311,8 @@
 @media (max-width: 600px) {
     .footer {
         margin-top: 20px; /* Add some space above the footer on small screens */
+        position: relative;
+        z-index: 800;
     }
 }
 
