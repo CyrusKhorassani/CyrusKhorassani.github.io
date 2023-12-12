@@ -49,6 +49,7 @@
     background-color: #f1f1f1; /* Placeholder background color */
     border-radius: 5px;
     margin-bottom: 20px;
+    
 }
 
 /* Styling for the article title */
@@ -303,6 +304,12 @@
     align-items: center;
     max-width: 800px; /* Centered within the viewport */
     margin: 0 auto;
+}
+
+@media (max-width: 600px) {
+    .footer {
+        display: block; /* Show the footer on small screens */
+    }
 }
 
 /* Your other footer styles here */
